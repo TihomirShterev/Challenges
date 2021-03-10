@@ -1,0 +1,10 @@
+.title-and-logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.buttons {
+  border-bottom: 3px dashed #D92890;
+  padding-bottom: 200px;
+}

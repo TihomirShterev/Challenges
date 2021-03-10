@@ -1,0 +1,92 @@
+.dark-btn-container a,
+.light-btn-container {
+  text-decoration: none;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark-btn-container a {
+  width: 50%;
+  margin-top: 2%;
+  cursor: initial;
+}
+
+.light-btn-container {
+  width: 47%;
+}
+
+.dark-btn,
+.light-btn {
+  padding: 1% 2%;
+  clip-path: polygon(0 0, 100% 0, 93% 100%, 0% 100%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+}
+
+.dark-btn {
+  width: 50%;
+  background-color: rgb(36, 78, 110);
+  border: 2px solid rgb(36, 78, 110);
+}
+
+.light-btn {
+  width: 47%;
+  background-color: rgb(90, 183, 186);
+  border: 2px solid rgb(90, 183, 186);
+}
+
+.dark-btn-hover,
+.light-btn-hover {
+  width: 50%;
+  padding: 1% 2%;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0, 93% 100%, 0% 100%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.dark-btn-hover {
+  border: 2px solid rgb(36, 78, 110);
+}
+
+.light-btn-hover {
+  border: 2px solid rgb(90, 183, 186);
+}
+
+.dark-btn-text,
+.light-btn-text {
+  font-weight: 500;
+  font-size: 14pt;
+  margin-left: 1%;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.dark-btn-text-hover,
+.light-btn-text-hover {
+  font-weight: 500;
+  font-size: 14pt;
+  margin-left: 1%;
+  letter-spacing: 1px;
+}
+
+.dark-btn-text-hover {
+  color: rgb(36, 78, 110);
+}
+
+.light-btn-text-hover {
+  color: rgb(90, 183, 186);
+}
+
+.dark-btn-icon,
+.light-btn-icon {
+  width: 50px;
+}

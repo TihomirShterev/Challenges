@@ -1,0 +1,9 @@
+@import 'https://use.fontawesome.com/releases/v5.15.1/css/all.css';
+
+body {
+  box-sizing: border-box;
+  max-width: 1536px;
+  margin: 0 auto;
+  /* font-family: Helvetica, sans-serif;  */
+  /* border: 1px solid black; */
+}

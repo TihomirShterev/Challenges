@@ -1,0 +1,9 @@
+.text {
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+  font-size: 80px;
+  font-weight: bold;
+  color: #004F6B;
+  border-right: 4px solid #E7E8E9;
+}
