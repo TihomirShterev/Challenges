@@ -1,0 +1,14 @@
+Your task:
+
+- apply css styles/html tags to newsletter-template-uk.html; 
+- make the template to look like the provided mockup as much as possible: apply font sizes, paddings, margins, colors, line-heights, font-family, etc.
+- add the banner image;
+- add the opt-in button image and link it to www.10bet.co.uk;
+- add new styles wherever you see fit;
+
+Notes:
+
+- do not edit or delete existing inline styles or styles between the <style> tags;
+- no external css files to be included;
+- all needed texts are already in the template;
+- font-family to be used: Tahoma, Arial, sans-serif;
