@@ -100,6 +100,81 @@
             .email-container {
                 min-width: 375px !important;
             }
+
+            .material-terms {
+              font-size: 47%;
+            }
+
+            .body-text {
+              font-size: 72%;
+            }
+
+            .body-text img {
+              width: 90px !important;
+              height: 37px !important;
+            }
+
+            .footer-holder > table:nth-child(1) .footer-section-holder,
+            .footer-holder > table:nth-child(2) .footer-section-holder {
+              font-size: 67%;
+            }
+
+            .footer-holder > table:nth-child(2) .footer-section-holder {
+              padding: 9px 0 11px;
+            }
+
+            .footer-icons .footer-icon:not(:last-child) {
+                border-right: 1px solid #B8B8B8;
+            }
+
+            .footer-icons .footer-icon {
+                margin: 13px 0 13px 23px;
+                padding: 2px 0;
+            }
+
+            .footer-icons .footer-icon a {
+              font-size: 10px;
+            }
+
+            .footer-holder .icons {
+                margin: 15px 0;
+            }
+
+            .center-wrapper .header {
+              border-bottom: none !important;
+            }
+
+            .center-wrapper .header::after {
+              content: "";
+              display: block;
+              margin: 0 auto;
+              padding-top: 12px;
+              border-bottom: 1px solid #c4c4c4;
+            }
+
+            .center-wrapper .header a,
+            .center-wrapper .header span {
+              font-size: 10px !important;
+            }
+
+            .center-wrapper .sub-header {
+              padding: 0 0 20px !important;
+            }
+
+            .center-wrapper .sub-header .mobile-padding-right {
+              width: unset !important;
+              padding-right: unset !important;
+            }
+
+            .center-wrapper .sub-header .mobile-padding-right img {
+              width: 62px !important;
+              height: 28px !important;
+            }
+
+            .unsubscribe {
+              margin: 20px 0;
+              font-size: 10px;
+            }
         }
 
         /* iPhone 6+, 7+, and 8+ */
@@ -172,6 +247,7 @@
             }
             .hide-for-mobile {
                 display: none !important;
+                display: unset !important;
             }
             .box-image {
                 width: 83% !important;
@@ -196,6 +272,7 @@
             }
             .material-terms {
                 padding: 14px 18px 14px 18px !important;
+                padding: 4px 18px 3px 28px !important;
             }
             .mob-app-table {
                 text-align: center !important;
@@ -219,9 +296,11 @@
             }
             .body-text {
                 padding: 18px !important;
+                padding: 3px 26px 22px !important;
             }
             .footer-holder {
                 padding: 0 18px !important;
+                padding: 0 !important;
             }
             .footer-terms-list {}
             .logo-holder {
@@ -230,6 +309,7 @@
             }
             .logo-img {
                 width: 68px !important;
+                width: 90px !important;
             }
             .logo-img-juve {
                 width: 100px !important;
@@ -251,6 +331,20 @@
             .line-break {
                 display: block !important;
             }
+        }
+
+        @media screen and (min-device-width: 375px) and (max-device-width: 413px) {
+          .wrapper {
+                padding: 0 10px !important;
+          }
+
+          .logo-holder {
+            padding-left: 0;
+          }
+
+          .logo-img {
+            width: 82px !important;
+          }
         }
 
         @media screen and (max-width: 320px) {
@@ -599,7 +693,7 @@
                                 <tbody>
                                     <!-- Email Header : BEGIN -->
                                     <tr>
-                                        <td style="padding: 17px 0 14px; text-align: left; color: #999999; border-bottom: 1px solid #c4c4c4; font-family: Tahoma, Arial, sans-serif; font-size: 11px;">
+                                        <td class="header" style="padding: 17px 0 14px; text-align: left; color: #999999; border-bottom: 1px solid #c4c4c4; font-family: Tahoma, Arial, sans-serif; font-size: 11px;">
                                             <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
                                                 <tbody>
                                                     <tr>
@@ -636,7 +730,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 20px 0; text-align: left">
+                                        <td class="sub-header" style="padding: 20px 0; text-align: left">
                                             <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
                                                 <tbody>
                                                     <tr>
