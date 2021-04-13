@@ -14,6 +14,7 @@
 
     <meta name="x-apple-disable-message-reformatting" />
   
+    <link rel="stylesheet" href="styles.css">
     <title>Man Utd v Arsenal</title>
 
     <!-- CSS Reset : BEGIN -->
@@ -685,7 +686,7 @@
                                     <tr>
                                         <td>
                                             <a href="" target="_blank" style="text-decoration: none;">
-                                                <img alt="Man Utd v Arsenal" width="100%" class="fluid g-img" style="display: block; width: 100%; max-width: 602px; height: auto; max-height: 242px; background: #172130; font-family: Tahoma, Arial, sans-serif; font-size: 15px; line-height: 15px; color: #fff; margin: auto;" border="0">
+                                                <img src="./images/banner-uk.png" alt="Man Utd v Arsenal" width="100%" class="fluid g-img" style="display: block; width: 100%; max-width: 602px; height: auto; max-height: 242px; background: #172130; font-family: Tahoma, Arial, sans-serif; font-size: 15px; line-height: 15px; color: #fff; margin: auto;" border="0">
                                             </a>
                                         </td>
                                     </tr>
@@ -726,8 +727,8 @@
                                                                 <tbody>
                                                                     <tr>
                                                                         <td align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;margin:0; padding-top: 0px;">
-                                                                            <a style="width: 102px; height: 40px; display: block;">
-                                                                                <img alt="opt-in button" width="102" height="40" style="width: 102px; height: 40px; line-height: 40px; display: block;">
+                                                                            <a href="https://www.10bet.co.uk/" style="width: 102px; height: 40px; display: block;">
+                                                                                <img src="./images/opt-in.png" alt="opt-in button" width="102" height="40" style="width: 102px; height: 40px; line-height: 40px; display: block;">
                                                                             </a>
                                                                         </td>
                                                                     </tr>
@@ -755,7 +756,8 @@
                                                     <!-- Terms and Conditions : BEGIN -->
                                                     <tr>
                                                         <td class="footer-section-holder">
-                                                            <p class="footer-section-title">Terms and Conditions</p>
+                                                          <p class="footer-section-title">Terms and Conditions</p>
+                                                          <p class="footer-section-text">
 
                                                               The Promotion period of this offer is from 23/10 17:00 to 01/11 16:30 GMT.
 
@@ -787,6 +789,7 @@
                                                              
                                                              These T&Cs are subject to the Terms and Conditions and 10bet General Promotion Terms.
 
+                                                            </p>
                                                         </td>
                                                     </tr>
                                                     <!-- Terms and Conditions : END -->
@@ -824,7 +827,7 @@
 																		<tr>
 																		    <td class="footer-icons">
 																		        
-																		        <div class="footer-icon">
+																		        <div class="footer-icon" id="sports">
 																		            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" align="center" style="width: 100%;">
 																		                <tbody>
 																		                    <tr>
@@ -836,7 +839,7 @@
 																		            </table>
 																		        </div>
 																		        
-																		        <div class="footer-icon">
+																		        <div class="footer-icon" id="live-betting">
 																		            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" align="center" style="width: 100%;">
 																		                <tbody>
 																		                    <tr>
@@ -848,7 +851,7 @@
 																		            </table>
 																		        </div>
 																		        
-																		        <div class="footer-icon">
+																		        <div class="footer-icon" id="casino">
 																		            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" align="center" style="width: 100%;">
 																		                <tbody>
 																		                    <tr>
@@ -860,7 +863,7 @@
 																		            </table>
 																		        </div>
 																		      
-																		        <div class="footer-icon">
+																		        <div class="footer-icon" id="live-casino">
 																		            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" align="center" style="width: 100%;">
 																		                <tbody>
 																		                    <tr>
@@ -882,7 +885,7 @@
 																		        <table width="100%" align="left" border="0" cellpadding="0" cellspacing="0">
 																		            <tbody>
 																		                <tr>
-																		                    <td align="left" valign="middle">
+																		                    <td class="icons" align="left" valign="middle">
 																		                       
 																		                        <div>
 																		                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
@@ -960,7 +963,7 @@
 																		        <tbody>
 																		            <tr>
 																		                <td align="left" valign="middle">
-																		                    <p>
+																		                    <p class="copyrights">
 																		                        &copy; 10bet. All rights reserved.
 																		                    </p>
 																		                </td>
@@ -981,7 +984,7 @@
                                                             <tbody>
                                                                 <tr>
                                                                     <td align="left" valign="middle" >
-                                                                        <p style="margin: 26px 0 26px 0;">To unsubscribe
+                                                                        <p class="unsubscribe" style="margin: 26px 0 26px 0;">To unsubscribe
                                                                             <a href="#SPCUSTOMOPTOUT" xt="SPCUSTOMOPTOUT">Click here</a>
                                                                         </p>
                                                                     </td>
@@ -1005,6 +1008,22 @@
         </div>
        
     </center>
+    <script onload="iterateTermsAndConditions()">
+      const text = document.querySelector('.footer-section-text').innerHTML;
+      const termsAndConditions = text
+        .split('\n')
+        .map(t => t.trim())
+        .filter(t => t !== '');
+
+      let termsAndConditionsCounter = 1;
+      let newText = [];
+
+      for (const t of termsAndConditions) {
+        newText.push(`${termsAndConditionsCounter++}. ${t}`);
+      }
+
+      document.querySelector('.footer-section-text').innerHTML = newText.join('<br>');
+    </script>
 </body>
 
 </html>
