@@ -14,7 +14,6 @@
 
     <meta name="x-apple-disable-message-reformatting" />
   
-    <link rel="stylesheet" href="styles.css">
     <title>Man Utd v Arsenal</title>
 
     <!-- CSS Reset : BEGIN -->
@@ -87,6 +86,112 @@
 
         .footer-icon {
             width: 16%;
+        }
+
+        /* desktop version improvements */
+        body {
+          font-family: Tahoma, Arial, sans-serif;;
+        }
+
+        .material-terms {
+          background-color: #277625;
+            color: white;
+            font-size: 9px;
+            line-height: 1.5;
+            padding: 5px 24px;
+        }
+
+        .body-text {
+          background-color: #4E454A;
+          color: white;
+          padding: 3px 24px 24px;
+          font-size: 14px;
+          line-height: 1.4;
+        }
+
+        .body-text p:nth-child(3) {
+          margin: -4px 0 19px;
+        }
+
+        /* footer */
+        .footer-holder table .footer-section-holder {
+          border-bottom: 1px solid #B8B8B8;
+        }
+
+        .footer-holder > table:nth-child(1) .footer-section-holder {
+          font-size: 12px;
+          line-height: 1.5;
+        }
+
+        .footer-holder > table:nth-child(1) .footer-section-holder .footer-section-text {
+          color: #444442;
+        }
+
+        .footer-holder > table:nth-child(2) .footer-section-holder {
+          font-size: 12px;
+          padding: 12px 0 14px;
+        }
+
+        .footer-holder > table:nth-child(2) .footer-section-holder a {
+          color: black;
+          text-decoration: none;
+        }
+
+        .footer-icons {
+          display: flex;
+          justify-content: center;
+          border-bottom: 1px solid #B8B8B8;
+        }
+
+        .footer-icons .footer-icon {
+          font-size: 12px;
+          margin: 17px 0 17px 23px;
+          padding: 3px 0;
+        }
+
+        .footer-icons .footer-icon#sports,
+        .footer-icons .footer-icon#casino {
+          flex-basis: 12%;
+        }
+
+        .footer-icons .footer-icon#live-betting,
+        .footer-icons .footer-icon#live-casino {
+          flex-basis: 18%;
+        }
+
+
+        .footer-icons .footer-icon:not(:last-child) {
+          border-right: 2px solid #B8B8B8;
+        }
+
+        .footer-icons .footer-icon a {
+          text-decoration: none;
+          color: black;
+        }
+
+        .footer-holder .icons {
+          display: flex;
+          margin: 23px 0;
+        }
+
+        .footer-holder .icons div {
+          flex-basis: 5%;
+        }
+
+        .footer-holder .copyrights {
+          margin: 0 0 25px;
+          font-size: 12px;
+          color: #444442;
+        }
+
+        .unsubscribe {
+          font-size: 12px;
+          color: #444442;
+        }
+
+        .unsubscribe a {
+          text-decoration: none;
+          color: black;
         }
 
         @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
@@ -248,7 +353,7 @@
 
             .footer-holder > table:nth-child(1) .footer-section-holder,
             .footer-holder > table:nth-child(2) .footer-section-holder {
-              font-size: 67%;
+              font-size: 64%;
             }
 
             .footer-holder > table:nth-child(2) .footer-section-holder {
@@ -476,6 +581,138 @@
         @media screen and (max-width: 320px) {
             .mob-app-holder {
                 padding: 0 14px 20px 14px !important;
+            }
+
+            .wrapper {
+                padding: 0 10px !important;
+            }
+
+            .logo-holder {
+              padding-left: 0;
+              padding: 0;
+            }
+
+            .logo-img {
+              width: 58px !important;
+            }
+
+            .material-terms {
+              padding: 4px 10px 3px 14px !important;
+              font-size: 38%;
+            }
+
+            .body-text {
+              padding: 3px 14px 0 !important;
+              font-size: 57%;
+            }
+
+            .body-text p:nth-child(3) {
+              margin: -4px 0 13px;
+            }
+
+            .body-text img {
+              width: 65px !important;
+              height: 25px !important;
+            }
+
+            .header-item img {
+              width: 18px;
+              height: 18px;
+            }
+
+            .email-container {
+                min-width: 320px !important;
+            }
+
+            .center-wrapper .header {
+              border-bottom: none !important;
+              padding: 7px 0 2px !important;
+            }
+
+            .center-wrapper .header::after {
+              padding-top: 7px;
+            }
+
+            .center-wrapper .header a,
+            .center-wrapper .header span {
+              font-size: 8px !important;
+            }
+
+            .center-wrapper .sub-header {
+              padding: 0 !important;
+            }
+
+            .center-wrapper .sub-header .mobile-padding-right {
+              padding-top: 4px;
+            }
+
+            .center-wrapper .sub-header .mobile-padding-right img {
+              width: 44px !important;
+              height: 19px !important;
+            }
+
+            .footer-holder > table:nth-child(1) .footer-section-holder,
+            .footer-holder > table:nth-child(2) .footer-section-holder {
+              font-size: 48.6%;
+            }
+
+            .footer-holder > table:nth-child(2) .footer-section-holder {
+              padding: 7px 0 9px;
+            }
+
+            .footer-icons .footer-icon:not(:last-child) {
+              border-right: 1px solid #B8B8B8;
+            }
+
+            .footer-icons {
+                padding-bottom: 0 !important;
+            }
+
+            .footer-icons .footer-icon {
+              margin: 10px 0;
+              padding: 0;
+            }
+
+            .footer-icons .footer-icon#sports {
+              flex-basis: 17%;
+            }
+
+            .footer-icons .footer-icon#casino {
+              flex-basis: 18%;
+            }
+
+            .footer-icons .footer-icon#live-betting {
+              flex-basis: 24%;
+            }
+
+            .footer-icons .footer-icon#live-casino {
+              flex-basis: 18%;
+              padding-left: 8px;
+            }
+
+
+            .footer-icons .footer-icon a {
+              font-size: 67%;
+              position: relative;
+              top: -2px;
+            }
+
+            .footer-holder .icons {
+              margin: 15px 0;
+            }
+
+            .footer-holder .icons img {
+              width: 23px !important;
+              height: 23px !important;
+            }
+
+            .footer-holder .copyrights {
+              margin: 0px 0 16px;
+              font-size: 8px;
+            }
+
+            .unsubscribe {
+              font-size: 8px;
             }
         }
     </style>
