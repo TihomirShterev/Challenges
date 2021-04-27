@@ -7,11 +7,7 @@ function calcBestTotalVelocity(arr) {
     let maxSumArr = arr.slice(0, 3);
     let maxSum = sumSeq(maxSumArr);
 
-    for (let i = 1; i < arr.length; i++) {
-      if (i === arr.length - 2) {
-        return `{ sequence: [${maxSumArr.join(', ')}], sum: ${maxSum} }`;
-      }
-
+    for (let i = 1; i < arr.length - 2; i++) {
       const currArr = arr.slice(i, i + 3)
       const currSum = sumSeq(currArr);
 
@@ -20,6 +16,7 @@ function calcBestTotalVelocity(arr) {
         maxSum = currSum;
       }
     }
+    return `{ sequence: [${maxSumArr.join(', ')}], sum: ${maxSum} }`;
   }
 }
 
