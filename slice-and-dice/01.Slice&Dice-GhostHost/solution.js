@@ -1,15 +1,15 @@
 const testimonials = [
   {
-    content: "Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui interdum dolor pulvinar vitae.",
-    name: "Jason Donkin",
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, quos quasi laudantium dicta sed accusantium non ad iure aspernatur nemo, accusamus.",
+    name: "John Doe",
   },
   {
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum",
-    name: "Johnny Bravo",
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat libero dolor quis doloremque quod qui consequatur modi vel officia, dolorum iste suscipit.",
+    name: "Johnathan Doe",
   },
   {
-    content: "Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit.",
-    name: "Foncho Jason",
+    content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo voluptatum vel tempore earum. Sed hic, eveniet, maiores vitae sunt, eius nihil facere optio.",
+    name: "Jonny Doe",
   }
 ];
 
