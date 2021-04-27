@@ -1,10 +1,10 @@
 const testimonials = [
   {
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, quos quasi laudantium dicta sed accusantium non ad iure aspernatur nemo, accusamus.",
+    content: "Lorem ipsum dolor. Magnam, quos quasi laudantium dicta sed accusantium non ad iure aspernatur nemo, accusamus.",
     name: "John Doe",
   },
   {
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat libero dolor quis doloremque quod qui consequatur modi vel officia, dolorum iste suscipit.",
+    content: "Lorem ipsum dolor sit amet consectetur. Placeat libero dolor quis doloremque quod qui consequatur modi vel officia, dolorum iste suscipit.",
     name: "Johnathan Doe",
   },
   {
