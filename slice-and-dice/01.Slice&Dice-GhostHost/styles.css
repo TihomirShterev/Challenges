@@ -10,7 +10,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1150px;
+  max-width: 1150px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -235,7 +235,7 @@ header {
 
 .customer-container {
   border-right: 1px solid gray;
-  padding-right: 8px;
+  padding-right: 15px;
 }
 
 #testimonials #customer {
@@ -252,6 +252,7 @@ header {
   justify-content: space-around;
   width: 50px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .circles-container ul li {

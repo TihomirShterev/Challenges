@@ -1,5 +1,220 @@
-@media screen and (max-width: 376px) {
-  body {
-    background: red;
+@media screen and (max-width: 1024px) {
+  .login h1 {
+    margin-left: 250px;
+  }
+
+  .about-us {
+    margin-right: unset;
+  }
+  
+  .about-us .text, .about-us .designers-list {
+    flex-basis: 40%;
+  }
+
+  .about-us .designers-list {
+    padding-left: 50px;
+  }
+
+  .design-author,
+  .nav-footer,
+  .contacts-list {
+    flex-basis: 30%;
+  }
+
+  .design-author {
+    margin-right: 20px;
+  }
+
+  .nav-footer {
+    padding: 0 20px;
+  }
+
+  .nav-list-first-col,
+  .nav-list-second-col {
+    padding-left: 0;
+    margin: 0 5px;
+  }
+  
+  .contacts-list {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .intro,
+  .authentication {
+    top: -123px;
+  }
+
+  .nav-list {
+    padding: 0;
+  }
+
+  .nav-list li {
+    margin: 0 38px;
+  }
+
+  .login h1,
+  .register h1 {
+    margin-left: 170px;
+  }
+
+  .about-us .text p {
+    font-size: 80%;
+  }
+
+  .designer .image-container {
+    width: 60px;
+  }
+  
+  .designer h4,
+  .designer h5 {
+    margin: 0 0 10px;
+    font-size: 60%;
+  }
+  
+  .designer .contact-icons {
+    display: flex;
+  }
+  
+  .designer .contact-icons a i {
+    font-size: 80%;
+    margin: 5px;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .nav-footer,
+  .contacts-list {
+    flex-basis: 48%;
+    padding: 0;
+  }
+
+  .design-author {
+    margin-right: unset;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .design-author p {
+    margin-top: 0;
+  }
+
+  .nav-footer {
+    padding: 0;
+    border-left: unset;
+  }
+
+  .nav-list-first-col,
+  .nav-list-second-col {
+    padding-left: 0;
+    padding-right: 30px;
+  }
+
+  .contacts-list {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header .logo {
+    padding-top: 20px;
+  }
+
+  .nav-list {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .nav-list li {
+    padding: 20px 0;
+  }
+
+  .intro,
+  .authentication {
+    top: -171px;
+  }
+
+  .intro {
+    justify-content: flex-end;
+    height: 350px;
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+
+  .login,
+  .register {
+    flex-basis: 50%;
+    padding: 0;
+  }
+
+  .login h1,
+  .register h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .about-us {
+    position: relative;
+    bottom: 90px;
+    height: 300px;
+    flex-direction: column;
+  }
+
+  .about-us .text,
+  .about-us .designers-list {
+    flex-basis: 30%;
+    margin: 0 60px 25px;
+  }
+
+  .about-us .designers-list {
+    padding: 0;
+    border-left: none;
+  }
+
+  .about-us .designers-list .designer {
+    margin: 0 20px;
+  }
+
+  .testimonials-container {
+    width: 75%;
+  }
+
+  .benefits {
+    flex-direction: column;
+  }
+
+  .benefits article {
+    margin: 25px 80px;
+  }
+
+  .nav-footer,
+  .contacts-list {
+    flex-basis: unset;
+    padding: 0;
+  }
+
+  .nav-footer {
+    margin-bottom: 30px;
+    border-right: unset;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .intro,
+  .authentication {
+    top: -229px;
+  }
+
+  .intro {
+    height: 370px;
+    font-size: 20px;
   }
 }
