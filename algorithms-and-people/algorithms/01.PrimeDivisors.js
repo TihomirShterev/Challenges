@@ -12,17 +12,15 @@ function findPrimeDivisorsOf(n) {
   }
 
   const primeDivisors = [];
-
   let currentDivisor = 2;
 
   while (n !== 1) {
-    if ((n / currentDivisor) % 1 === 0) {
-      n /= currentDivisor;
-
+    if (n % currentDivisor === 0) {
       if (!primeDivisors.includes(currentDivisor)) {
         primeDivisors.push(currentDivisor);
       }
 
+      n /= currentDivisor;
     } else {
       currentDivisor++;
     }
