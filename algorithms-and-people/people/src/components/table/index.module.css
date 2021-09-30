@@ -1,0 +1,28 @@
+.people {
+  margin: 0 20px;
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 20%);
+}
+
+.people th {
+  font-weight: 500;
+}
+
+.people td,
+.people th {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+
+.people tr:nth-child(odd) {
+  background-color: #F3F3F3;
+}
+
+.people th,
+.people tr {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: white;
+}
