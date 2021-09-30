@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useGlobalFilter, usePagination, useTable } from 'react-table';
+import { getTableInfo } from '../../services/people';
 import { COLUMNS } from '../../utils/columns';
 import GlobalFilter from '../globalFilter';
 import styles from './index.module.css';
@@ -40,14 +41,9 @@ const Table = () => {
   const { globalFilter, pageIndex, pageSize } = state;
 
   const fetchData = useCallback(async () => {
-    try {
-      const response = await fetch('http://apis.chromeye.com:9191/people');
-      const result = await response.json();
-      setTableInfo(result);
-      setLoadingData(false);
-    } catch (err) {
-      console.log(err);
-    }
+    const info = await getTableInfo();
+    setTableInfo(info);
+    setLoadingData(false);
   }, [setTableInfo]);
 
   useEffect(() => {
@@ -69,12 +65,12 @@ const Table = () => {
                 <span> Page <strong> {pageIndex + 1} of {pageOptions.length} </strong> </span>
                 {canPreviousPage && (
                   <button onClick={() => previousPage()}>
-                    <i class="fas fa-chevron-left"></i>
+                    <i className="fas fa-chevron-left"></i>
                   </button>
                 )}
                 {canNextPage && (
                   <button onClick={() => nextPage()}>
-                    <i class="fas fa-chevron-right"></i>
+                    <i className="fas fa-chevron-right"></i>
                   </button>
                 )}
               </div>

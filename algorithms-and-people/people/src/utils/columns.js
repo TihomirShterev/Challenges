@@ -1,9 +1,11 @@
+import { baseURL } from "../config/config";
+
 export const COLUMNS = [
   {
     Header: 'Avatar',
     accessor: 'avatar.url',
     Cell: ({ cell: { value } }) => (
-      <img src={'http://apis.chromeye.com:9191' + value} alt={value} width={30} />
+      <img src={baseURL + value} alt={value} width={30} />
     )
   },
   {
