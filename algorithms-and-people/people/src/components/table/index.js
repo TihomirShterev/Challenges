@@ -17,12 +17,24 @@ const Table = () => {
     prepareRow,
     state,
     setGlobalFilter,
+    page,
+    nextPage,
+    previousPage,
+    canPreviousPage,
+    canNextPage,
+    pageOptions,
+    setPageSize,
   } = useTable(
     {
       columns,
       data,
+      initialState: {
+        pageIndex: 0,
+        pageSize: 3
+      }
     },
     useGlobalFilter,
+    usePagination
   );
 
   const { globalFilter, pageIndex, pageSize } = state;
@@ -52,6 +64,33 @@ const Table = () => {
           <p>Loading... Please wait...</p>
         ) : (
           <>
+            <div className={styles.pagination}>
+              <div className={styles["page-number"]}>
+                <span> Page <strong> {pageIndex + 1} of {pageOptions.length} </strong> </span>
+                {canPreviousPage && (
+                  <button onClick={() => previousPage()}>
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                )}
+                {canNextPage && (
+                  <button onClick={() => nextPage()}>
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                )}
+              </div>
+              <div className={styles["page-size"]}>
+                <span>Per Page</span>
+                <select
+                  value={pageSize}
+                  onChange={e => setPageSize(Number(e.target.value))}>
+                  {[1, 3, 5].map(pageSize => (
+                    <option key={pageSize} value={pageSize}>
+                      --- {pageSize} ---
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
             <table className={styles.people} {...getTableProps()}>
               <thead>
                 {headerGroups.map(headerGroup => (
