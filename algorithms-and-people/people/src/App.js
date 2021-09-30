@@ -1,10 +1,10 @@
-import Table from './components/table';
+import People from './components/pages/people';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Table />
+        <People />
       </header>
     </div>
   );
