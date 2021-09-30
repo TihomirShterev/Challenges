@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useGlobalFilter, usePagination, useTable } from 'react-table';
 import { COLUMNS } from '../../utils/columns';
+import GlobalFilter from '../globalFilter';
 import styles from './index.module.css';
 
 const Table = () => {
@@ -14,12 +15,18 @@ const Table = () => {
     getTableBodyProps,
     headerGroups,
     prepareRow,
+    state,
+    setGlobalFilter,
   } = useTable(
     {
       columns,
       data,
     },
+    useGlobalFilter,
   );
+
+  const { globalFilter, pageIndex, pageSize } = state;
+
   const fetchData = useCallback(async () => {
     try {
       const response = await fetch('http://apis.chromeye.com:9191/people');
@@ -39,6 +46,7 @@ const Table = () => {
 
   return (
     <div className={styles.screen}>
+      <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} />
       {loadingData
         ? (
           <p>Loading... Please wait...</p>
