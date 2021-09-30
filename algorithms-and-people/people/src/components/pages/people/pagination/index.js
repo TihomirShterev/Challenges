@@ -8,13 +8,28 @@ const Pagination = ({
   previousPage,
   canNextPage,
   nextPage,
+  gotoPage,
   pageSize,
   setPageSize
 }) => {
+
   return (
     <div className={styles.pagination}>
       <div className={styles["page-number"]}>
-        <span> Page <strong> {pageIndex + 1} of {pageOptions.length} </strong> </span>
+        <nav>
+          <ul className={styles["page-list"]}>
+            {pageOptions.map(number => (
+              <li key={number + 1}>
+                <a
+                  className={pageIndex === number ? styles["page-link-active"] : styles["page-link"]}
+                  onClick={() => gotoPage(number)}
+                  href="!#">{number + 1}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+      <div className={styles["page-buttons"]}>
         {canPreviousPage && (
           <button onClick={() => previousPage()}>
             <i className="fas fa-chevron-left"></i>

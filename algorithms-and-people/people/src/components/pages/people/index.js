@@ -21,6 +21,7 @@ const People = () => {
     state,
     setGlobalFilter,
     page,
+    gotoPage,
     nextPage,
     previousPage,
     canPreviousPage,
@@ -69,6 +70,7 @@ const People = () => {
               previousPage={previousPage}
               canNextPage={canNextPage}
               nextPage={nextPage}
+              gotoPage={gotoPage}
               pageSize={pageSize}
               setPageSize={setPageSize}
             />

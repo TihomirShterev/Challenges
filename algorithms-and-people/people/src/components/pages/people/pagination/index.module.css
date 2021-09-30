@@ -2,48 +2,94 @@
   display: flex;
 }
 
-.pagination .page-number {
+.page-number {
   align-self: center;
-  margin-top: 3px;
 }
 
-.pagination .page-number span input:hover,
-.pagination .page-size select:hover {
-  outline: 1px solid #3F51B5;
+.page-number span input:hover,
+.page-size select:hover {
+  outline: 1px solid #3f51b5;
 }
 
-.pagination .page-number span {
+.page-number span {
   padding: 11px;
   font-size: 16px;
-  color: #3F51B5;
+  color: #3f51b5;
   border-radius: 4px;
   border: 1px solid #676767;
 }
 
-.pagination .page-number button {
+.page-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.page-list li .page-link-active {
+  background: #3f51b5;
+  color: white;
+}
+
+.page-list li .page-link-active:hover {
+  background: #303F9F;
+}
+
+.page-list li a {
+  padding: 5px 15px;
+  border: 1px solid rgba(63, 81, 181, 0.5);
+  color: #3f51b5;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.page-list li .page-link:hover {
+  padding: 5px 15px;
+  border: 1px solid #3f51b5;
+  background: #f7f8fc;
+  text-decoration: none;
+}
+
+.page-list li:first-child a {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.page-list li:last-child a {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.page-buttons {
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+button {
+  margin: 0 5px;
   font-size: 16px;
-  margin: 12px;
   border: none;
   background: transparent;
 }
 
-.pagination .page-number button:hover {
+button:hover {
   cursor: pointer;
-  color: #3F51B5;
+  color: #3f51b5;
 }
 
-.pagination .page-size {
+.page-size {
   display: flex;
   flex-direction: column;
   margin-right: 20px;
 }
 
-.pagination .page-size span {
+.page-size span {
   font-size: 15px;
   color: #676767;
 }
 
-.pagination .page-size select {
+.page-size select {
   padding: 11px;
   font-size: 16px;
   border: 1px solid #676767;
